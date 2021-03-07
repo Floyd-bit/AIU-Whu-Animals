@@ -2,12 +2,12 @@
   <el-container>
     <el-aside style="width: 200px;margin-top: 20px">
       <switch/>
+      <SideMenu @indexSelect="listByArea" ref="sideMenu"></SideMenu>
       <!--侧边菜单-->
-      <SideMenu/>
     </el-aside>
     <el-main>
       <!--动物展示-->
-      <AnimalShow class="animalshow"/>
+      <AnimalShow class="animal-show" ref="animalshow"/>
     </el-main>
   </el-container>
 </template>
@@ -17,12 +17,24 @@ import SideMenu from './SideMenu'
 import AnimalShow from './AnimalShow'
 export default {
   name: 'AnimalIndex',
-  components: {SideMenu, AnimalShow}
+  components: {SideMenu, AnimalShow},
+  methods: {
+    listByArea () {
+      var _this = this
+      var cid = this.$refs.sideMenu.cid
+      var url = 'area/' + cid + '/animal'
+      this.$axios.get(url).then(resp => {
+        if (resp && resp.status === 200) {
+          _this.$refs.animalshow.animal = resp.data
+        }
+      })
+    }
+  }
 }
 </script>
 
 <style scoped>
-  .animalshow {
+  .animal-show {
     width: 990px;
     margin-left: auto;
     margin-right: auto;
