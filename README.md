@@ -5,15 +5,15 @@
 
 #### 技术选型（初步）
 - 核心框架：Spring Boot 2 + vue
-•数据库层：Spring data jpa
-•持久化：MySQL
-•权限认证：Shiro
-•前端：基于Vue.js的element和vux
-•开发平台：IntelliJ IDEA + vscode 
-•项目管理：Maven工程
-•小组同步管理工作平台：Gitee
-•项目文档管理平台：石墨文档
-•服务器：阿里云学生服务器
+- 数据库层：Spring data jpa
+- 持久化：MySQL
+- 权限认证：Shiro
+- 前端：基于Vue.js的element和vux
+- 开发平台：IntelliJ IDEA + vscode 
+- 项目管理：Maven工程
+- 小组同步管理工作平台：Gitee
+- 项目文档管理平台：石墨文档
+- 服务器：阿里云学生服务器
 
 
 #### 小组分工
