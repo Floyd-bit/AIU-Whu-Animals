@@ -1,33 +1,30 @@
 # WHU-Animals
 
 #### 介紹
-校园流浪动物管理救助平台——WHU Animals
+校园流浪动物管理救助平台——WHU Animals...
 
-#### 架構
-架構說明
+#### 技术选型（初步）
+•核心框架：Spring Boot 2 + vue
+•数据库层：Spring data jpa
+•持久化：MySQL
+•权限认证：Shiro
+•前端：基于Vue.js的element和vux
+•开发平台：IntelliJ IDEA + vscode 
+•项目管理：Maven工程
+•小组同步管理工作平台：Gitee
+•项目文档管理平台：石墨文档
+•服务器：阿里云学生服务器
+
 
 #### 小组分工
-- 这里是列表文本
+- 杨棋霖
+- 赵卓轩
+- 朱中杨
+- 许同春
+- 蒙夏
 
 #### 进度安排
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 參與貢獻
-
-1.  Fork 本倉庫
-2.  新建 Feat_xxx 分支
-3.  提交程式碼
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 來支持不同的語言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方部落格 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 這個地址來瞭解 Gitee 上的優秀開源項目
-4.  [GVP](https://gitee.com/gvp) 全稱是 Gitee 最有價值開源項目，是綜合評定出的優秀開源項目
-5.  Gitee 官方提供的使用手冊 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一檔用來展示 Gitee 會員風采的欄目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+1.第一次迭代：
+2.第二次迭代：
+3.第三次迭代：
