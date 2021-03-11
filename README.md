@@ -4,7 +4,7 @@
 校园流浪动物管理救助平台——WHU Animals...
 
 #### 技术选型（初步）
-•核心框架：Spring Boot 2 + vue
+- 核心框架：Spring Boot 2 + vue
 •数据库层：Spring data jpa
 •持久化：MySQL
 •权限认证：Shiro
