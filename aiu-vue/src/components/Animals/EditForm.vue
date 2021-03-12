@@ -20,6 +20,7 @@
         </el-form-item>
         <el-form-item label="图片" :label-width="formLabelWidth" prop="picture">
           <el-input v-model="form.picture" autocomplete="off" placeholder="图片 URL"></el-input>
+          <img-upload @onUpload="uploadImg" ref="imgUpload"></img-upload>
         </el-form-item>
         <el-form-item label="简介" :label-width="formLabelWidth" prop="description">
           <el-input type="textarea" v-model="form.description" autocomplete="off"></el-input>
@@ -45,8 +46,10 @@
 </template>
 
 <script>
+import ImgUpload from './ImgUpload'
 export default {
   name: 'EditForm',
+  components: {ImgUpload},
   data () {
     return {
       dialogFormVisible: false,
@@ -96,6 +99,9 @@ export default {
             this.$emit('onSubmit')
           }
         })
+    },
+    uploadImg () {
+      this.form.picture = this.$refs.imgUpload.url
     }
   }
 }

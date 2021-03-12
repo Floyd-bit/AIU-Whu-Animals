@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+
 //springboot中可直接实现HandlerInterceptor接口
 public class LoginInterceptor implements HandlerInterceptor {
     @Override
@@ -43,3 +44,5 @@ public class LoginInterceptor implements HandlerInterceptor {
         return result;
     }
 }
+
+
