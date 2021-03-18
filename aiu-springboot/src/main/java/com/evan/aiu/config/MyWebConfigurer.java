@@ -1,22 +1,28 @@
 package com.evan.aiu.config;
 
-import com.evan.aiu.interceptor.LoginInterceptor;
 import org.springframework.boot.SpringBootConfiguration;
-import org.springframework.context.annotation.Bean;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 
 @SpringBootConfiguration
 public class MyWebConfigurer implements WebMvcConfigurer {
-    @Bean
-    public LoginInterceptor getLoginInterceptor(){
-        return new LoginInterceptor();
+
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        //所有请求都允许跨域，使用这种配置方法就不能在 interceptor 中再配置 header 了
+        registry.addMapping("/**")
+                .allowCredentials(true)
+                .allowedOrigins("http://localhost:8088")
+                .allowedMethods("POST", "GET", "PUT", "OPTIONS", "DELETE")
+                .allowedHeaders("*")
+                .maxAge(3600);
     }
 
     @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        //对所有的路径应用拦截器，除了index.html
-        registry.addInterceptor(getLoginInterceptor()).addPathPatterns("/**").excludePathPatterns("/index.html");
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/api/file/**").addResourceLocations("file:" + "d:/workspace/img/");
     }
+
 }

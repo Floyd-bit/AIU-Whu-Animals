@@ -13,6 +13,7 @@
     <a href="#nowhere" style="color: #fff;float: right;padding: 20px;">更多功能</a>
     <i class="el-icon-menu" style="float:right;font-size: 45px;color: #fff;padding-top: 8px"></i>
     <span style="position: absolute;padding-top: 20px;right: 43%;font-size: 20px;font-weight: bold;color: white">WHU Animals</span>
+    <i class="el-icon-switch-button" v-on:click="logout" style="float:right;font-size: 40px;color: #222;padding: 10px"></i>
   </el-menu>
 </template>
 
@@ -29,6 +30,19 @@ export default {
         {name: '/admin', navItem: '个人中心'}
       ]
     }
+  },
+  methods: {
+    logout () {
+      var _this = this
+      this.$axios.get('/logout').then(resp => {
+        if (resp.data.code === 200) {
+          // 前后端状态保持一致
+          _this.$store.commit('logout')
+          _this.$router.replace('/login')
+        }
+      })
+    }
+
   }
 }
 </script>
@@ -41,4 +55,10 @@ a{
 span {
   pointer-events: none;
 }
+
+.el-icon-switch-button {
+  cursor: pointer;
+  outline:0;
+}
+
 </style>

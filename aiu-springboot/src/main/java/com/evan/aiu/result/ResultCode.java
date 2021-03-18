@@ -1,6 +1,7 @@
 package com.evan.aiu.result;
 
-public enum  ResultCode {
+
+public enum ResultCode {
     SUCCESS(200),
     FAIL(400),
     UNAUTHORIZED(401),
@@ -9,7 +10,7 @@ public enum  ResultCode {
 
     public int code;
 
-    ResultCode(int code){
+    ResultCode(int code) {
         this.code = code;
     }
 }

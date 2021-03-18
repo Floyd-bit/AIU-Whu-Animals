@@ -2,8 +2,12 @@ package com.evan.aiu.utils;
 
 import java.util.Random;
 
+/**
+ * Utils for handle strings.
+ * @author Evan
+ * @date 2020/3/2 21:04
+ */
 public class StringUtils {
-    //生成随机长度字符串,用于给上传图片命名
     public static String getRandomString(int length) {
         String base = "abcdefghijklmnopqrstuvwxyz0123456789";
         Random random = new Random();

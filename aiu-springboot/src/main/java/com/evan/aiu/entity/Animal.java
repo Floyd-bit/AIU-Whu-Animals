@@ -1,4 +1,4 @@
-package com.evan.aiu.pojo;
+package com.evan.aiu.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

@@ -1,8 +1,8 @@
 package com.evan.aiu.controller;
 
-import com.evan.aiu.pojo.Animal;
+import com.evan.aiu.entity.Animal;
 import com.evan.aiu.service.AnimalService;
-import com.evan.aiu.utils.*;
+import com.evan.aiu.utils.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -56,7 +56,7 @@ public class AnimalController {
             return animalService.search(keywords);
         }
     }
-
+/*
     @CrossOrigin
     @PostMapping("api/picture")
     public String coversUpload(MultipartFile file) throws Exception {
@@ -75,5 +75,6 @@ public class AnimalController {
             return "";
         }
     }
+    */
 
 }
