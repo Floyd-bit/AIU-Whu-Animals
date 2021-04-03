@@ -4,7 +4,7 @@
       <el-breadcrumb separator-class="el-icon-arrow-right">
         <el-breadcrumb-item :to="{ path: '/admin/dashboard' }">管理中心</el-breadcrumb-item>
         <el-breadcrumb-item>内容管理</el-breadcrumb-item>
-        <el-breadcrumb-item>图书管理</el-breadcrumb-item>
+        <el-breadcrumb-item>动物管理</el-breadcrumb-item>
       </el-breadcrumb>
     </el-row>
     <el-card style="margin: 18px 2%;width: 95%">

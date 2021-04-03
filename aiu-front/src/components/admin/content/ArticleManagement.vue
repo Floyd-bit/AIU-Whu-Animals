@@ -8,7 +8,7 @@
       </el-breadcrumb>
     </el-row>
     <el-link href="/admin/content/editor" :underline="false" target="_blank" class="add-link">
-      <el-button type="success">写文章</el-button>
+      <el-button type="primary">写文章</el-button>
     </el-link>
     <el-card style="margin: 18px 2%;width: 95%">
       <el-table

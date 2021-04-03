@@ -4,9 +4,9 @@
     class="el-menu-admin"
     router
     mode="vertical"
-    background-color="#545c64"
-    text-color="#fff"
-    active-text-color="#ffd04b"
+    background-color="white"
+    text-color="black"
+    active-text-color="blue"
     :collapse="isCollapse">
     <div style="height: 80px;"></div>
       <!--index 没有用但是必需字段-->

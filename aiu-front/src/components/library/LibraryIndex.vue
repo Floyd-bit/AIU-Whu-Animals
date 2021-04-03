@@ -25,7 +25,8 @@ export default {
       var url = 'area/' + cid + '/animal'
       this.$axios.get(url).then(resp => {
         if (resp && resp.status === 200) {
-          _this.$refs.animalshow.animal = resp.data
+          _this.$refs.animalshow.animal = resp.data.result
+          _this.$refs.booksArea.currentPage = 1
         }
       })
     }

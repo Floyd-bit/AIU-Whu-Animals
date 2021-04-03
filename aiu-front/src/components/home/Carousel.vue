@@ -55,7 +55,7 @@
         items: [{
           id: 1,
           title: 'How2J.cn - Java 全栈学习网站',
-          img: '../../../static/img/carousel/how2j.png',
+          img: '../../../static/img/carousel/design.png',
           link: 'http://how2j.cn?p=50613'},
         {
           id: 2,

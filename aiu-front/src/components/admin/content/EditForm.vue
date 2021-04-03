@@ -1,38 +1,36 @@
 <template>
   <div style="text-align: left">
-    <el-button class="add-button" type="success" @click="dialogFormVisible = true">添加图书</el-button>
+    <el-button class="add-button" type="success" @click="dialogFormVisible = true">添加动物信息</el-button>
     <el-dialog
-      title="添加/修改图书"
+      title="添加/修改动物信息"
       :visible.sync="dialogFormVisible"
       @close="clear">
       <el-form v-model="form" style="text-align: left" ref="dataForm">
-        <el-form-item label="书名" :label-width="formLabelWidth" prop="title">
-          <el-input v-model="form.title" autocomplete="off" placeholder="不加《》"></el-input>
+        <el-form-item label="动物昵称" :label-width="formLabelWidth" prop="name">
+          <el-input v-model="form.name" autocomplete="off" placeholder="简单易记"></el-input>
         </el-form-item>
-        <el-form-item label="作者" :label-width="formLabelWidth" prop="author">
-          <el-input v-model="form.author" autocomplete="off"></el-input>
+        <el-form-item label="品种" :label-width="formLabelWidth" prop="breed">
+          <el-input v-model="form.breed" autocomplete="off"></el-input>
         </el-form-item>
-        <el-form-item label="出版日期" :label-width="formLabelWidth" prop="date">
+        <el-form-item label="最近发现日期" :label-width="formLabelWidth" prop="date">
           <el-input v-model="form.date" autocomplete="off"></el-input>
         </el-form-item>
-        <el-form-item label="出版社" :label-width="formLabelWidth" prop="press">
-          <el-input v-model="form.press" autocomplete="off"></el-input>
+        <el-form-item label="年龄" :label-width="formLabelWidth" prop="age">
+          <el-input v-model="form.age" autocomplete="off"></el-input>
         </el-form-item>
-        <el-form-item label="封面" :label-width="formLabelWidth" prop="cover">
-          <el-input v-model="form.cover" autocomplete="off" placeholder="图片 URL"></el-input>
+        <el-form-item label="封面" :label-width="formLabelWidth" prop="pictyre">
+          <el-input v-model="form.ptcture" autocomplete="off" placeholder="图片 URL"></el-input>
           <img-upload @onUpload="uploadImg" ref="imgUpload"></img-upload>
         </el-form-item>
-        <el-form-item label="简介" :label-width="formLabelWidth" prop="abs">
-          <el-input type="textarea" v-model="form.abs" autocomplete="off"></el-input>
+        <el-form-item label="简介" :label-width="formLabelWidth" prop="description">
+          <el-input type="textarea" v-model="form.description" autocomplete="off"></el-input>
         </el-form-item>
         <el-form-item label="分类" :label-width="formLabelWidth" prop="cid">
-        <el-select v-model="form.category.id" placeholder="请选择分类">
-          <el-option label="文学" value="1"></el-option>
-          <el-option label="流行" value="2"></el-option>
-          <el-option label="文化" value="3"></el-option>
-          <el-option label="生活" value="4"></el-option>
-          <el-option label="经管" value="5"></el-option>
-          <el-option label="科技" value="6"></el-option>
+        <el-select v-model="form.area.id" placeholder="请选择分类">
+          <el-option label="信息学部" value="1"></el-option>
+          <el-option label="文理学部" value="2"></el-option>
+          <el-option label="工学部" value="3"></el-option>
+          <el-option label="医学部" value="4"></el-option>
         </el-select>
         </el-form-item>
         <el-form-item prop="id" style="height: 0">
@@ -57,14 +55,14 @@
         dialogFormVisible: false,
         form: {
           id: '',
-          title: '',
-          author: '',
+          name: '',
+          breed: '',
           date: '',
-          press: '',
-          cover: '',
-          abs: '',
+          age: '',
+          picture: '',
+          description: '',
           cid: '',
-          category: {
+          area: {
             id: '',
             name: ''
           }
@@ -77,13 +75,14 @@
         this.$refs.imgUpload.clear()
         this.form = {
           id: '',
-          title: '',
-          author: '',
+          name: '',
+          breed: '',
           date: '',
-          press: '',
-          cover: '',
-          abs: '',
-          category: {
+          age: '',
+          picture: '',
+          description: '',
+          cid: '',
+          area: {
             id: '',
             name: ''
           }
@@ -91,15 +90,15 @@
       },
       onSubmit () {
         this.$axios
-          .post('/admin/content/books', {
+          .post('/admin/content/animal', {
             id: this.form.id,
-            cover: this.form.cover,
-            title: this.form.title,
-            author: this.form.author,
+            picture: this.form.picture,
+            name: this.form.name,
+            breed: this.form.breed,
             date: this.form.date,
-            press: this.form.press,
-            abs: this.form.abs,
-            category: this.form.category
+            age: this.form.age,
+            description: this.form.description,
+            area: this.form.area
           }).then(resp => {
             if (resp && resp.data.code === 200) {
               this.dialogFormVisible = false
