@@ -1,5 +1,5 @@
 <template>
-  <div style="margin-top: 40px">
+  <div style="margin-top: 40px;background: url(static/img/carousel/backimg.jpg) no-repeat;background-size: cover">
     <side-menu id="side-menu"></side-menu>
       <div class="home">
         <div id="header-div">

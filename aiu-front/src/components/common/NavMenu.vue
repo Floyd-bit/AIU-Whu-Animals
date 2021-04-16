@@ -11,12 +11,12 @@
       <el-menu-item v-for="(item,i) in navList" :key="i" :index="item.name">
         {{ item.navItem }}
       </el-menu-item>
-      <span style="position: absolute;padding-top: 20px;right: 43%;font-size: 20px;font-weight: bold">WHU Animals</span>
+      <span style="position: absolute;padding-top: 20px;right: 50%;font-size: 20px;font-weight: bold">WHU Animals</span>
       <el-input
         placeholder="快速搜索..."
         prefix-icon="el-icon-search"
         size="medium"
-        style="width: 300px;position:absolute;margin-top: 12px;right: 18%"
+        style="width: 300px;position:absolute;margin-top: 12px;right: 15%"
         v-model="keywords">
       </el-input>
     </el-menu>
@@ -34,7 +34,8 @@
           {name: '/library', navItem: '动物信息'},
           {name: '/login', navItem: '个人中心'}
         ],
-        keywords: ''
+        keywords: '',
+        circleUrl: 'https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png'
       }
     },
     computed: {
