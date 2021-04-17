@@ -67,19 +67,42 @@
 
 ![软件系统架构图](https://images.gitee.com/uploads/images/2021/0417/151136_a9728619_7797088.png "软件系统架构图 (1).png")
 
-2. 实体类图
+2. 类图
 
-
+- 实体类图
 ![实体类图](https://images.gitee.com/uploads/images/2021/0417/151506_5523c4bb_7797088.png "Package entity.png")
 
-3. service类图
+- service类图
 
 ![Service类图](https://images.gitee.com/uploads/images/2021/0417/151542_6be2b356_7797088.png "Package service.png")
 
-4. DAO类图
+- DAO类图
 
 ![DAO类图](https://images.gitee.com/uploads/images/2021/0417/151621_35aefe85_7797088.png "Package dao.png")
 
-5. controller类图
+- controller类图
 
 ![Controller类图](https://images.gitee.com/uploads/images/2021/0417/151642_5abed92c_7797088.png "Package controller.png")
+3.数据库设计
+- User表
+![輸入圖片說明](https://images.gitee.com/uploads/images/2021/0417/162144_058ab4a8_7797088.png "屏幕截图.png")
+- animal表
+![輸入圖片說明](https://images.gitee.com/uploads/images/2021/0417/162203_74541277_7797088.png "屏幕截图.png")
+- areas表
+![輸入圖片說明](https://images.gitee.com/uploads/images/2021/0417/162217_031123b4_7797088.png "屏幕截图.png")
+- article表
+![輸入圖片說明](https://images.gitee.com/uploads/images/2021/0417/162233_fd9bc7c7_7797088.png "屏幕截图.png")
+- admin-menu表
+![輸入圖片說明](https://images.gitee.com/uploads/images/2021/0417/162252_04750473_7797088.png "屏幕截图.png")
+- admin-permission表
+![輸入圖片說明](https://images.gitee.com/uploads/images/2021/0417/162307_e264bebc_7797088.png "屏幕截图.png")
+- admin_role表
+![輸入圖片說明](https://images.gitee.com/uploads/images/2021/0417/162322_22ded541_7797088.png "屏幕截图.png")
+- admin_user_role表
+![輸入圖片說明](https://images.gitee.com/uploads/images/2021/0417/162409_6f2873e0_7797088.png "屏幕截图.png")
+- admin_role表
+![輸入圖片說明](https://images.gitee.com/uploads/images/2021/0417/162430_8a836300_7797088.png "屏幕截图.png")
+- admin_role_menu表
+![輸入圖片說明](https://images.gitee.com/uploads/images/2021/0417/162447_73e7fba5_7797088.png "屏幕截图.png")
+- admin_role_permission表
+![輸入圖片說明](https://images.gitee.com/uploads/images/2021/0417/162501_082eabef_7797088.png "屏幕截图.png")
