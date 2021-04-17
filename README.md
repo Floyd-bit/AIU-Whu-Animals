@@ -32,11 +32,20 @@
 
 #### 项目进度
 - 新增 项目文档
-- 新增 用例图
+- 新增 用例图、甘特图、类图、时序图、协作图
 - 新增 需求文档
+- 新增 设计文档
 
 
 #### 需求分析（需求文档见项目文档）
+[需求文档地址](https://shimo.im/docs/3odvQ53htLI2ESKa/ 《需求文档》，可复制链接后用石墨文档 App 或小程序打开)
 ![Gant图](https://images.gitee.com/uploads/images/2021/0415/092916_276fa071_7797088.png "图片1.png")
 ![用例图](https://images.gitee.com/uploads/images/2021/0330/104852_632c9274_7797088.png "QQ图片20210330104835.png")
-[需求文档地址](https://shimo.im/docs/3odvQ53htLI2ESKa/ 《需求文档》，可复制链接后用石墨文档 App 或小程序打开)
+#### 概要设计（设计文档见项目文档）
+![三层架构](https://images.gitee.com/uploads/images/2021/0417/151220_343bc655_7797088.png "简单三层.png")
+#### 详细设计（设计文档见项目文档）
+![软件系统架构图](https://images.gitee.com/uploads/images/2021/0417/151136_a9728619_7797088.png "软件系统架构图 (1).png")
+![实体类图](https://images.gitee.com/uploads/images/2021/0417/151506_5523c4bb_7797088.png "Package entity.png")
+![Service类图](https://images.gitee.com/uploads/images/2021/0417/151542_6be2b356_7797088.png "Package service.png")
+![DAO类图](https://images.gitee.com/uploads/images/2021/0417/151621_35aefe85_7797088.png "Package dao.png")
+![Controller类图](https://images.gitee.com/uploads/images/2021/0417/151642_5abed92c_7797088.png "Package controller.png")
