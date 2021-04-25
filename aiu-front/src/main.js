@@ -5,6 +5,8 @@ import mavonEditor from 'mavon-editor'
 import 'mavon-editor/dist/css/index.css'
 import 'echarts/theme/macarons.js'
 import store from './store'
+import VueResource from 'vue-resource'
+import Qs from 'qs'
 
 import {
   Pagination,
@@ -64,6 +66,8 @@ import {
 } from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
+Vue.use(Qs)
+Vue.use(VueResource)
 Vue.use(Pagination)
 Vue.use(Dialog)
 Vue.use(Menu)
@@ -126,7 +130,7 @@ Vue.prototype.$notify = Notification
 Vue.prototype.$message = Message
 
 var axios = require('axios')
-axios.defaults.baseURL = 'http://localhost:8443/api'
+axios.defaults.baseURL = 'http://47.119.125.69:8443/api'
 // 使请求带上凭证信息
 axios.defaults.withCredentials = true
 

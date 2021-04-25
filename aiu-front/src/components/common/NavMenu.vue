@@ -32,7 +32,9 @@
           {name: '/index', navItem: '首页'},
           {name: '/jotter', navItem: '留言区'},
           {name: '/library', navItem: '动物信息'},
-          {name: '/login', navItem: '个人中心'}
+          {name: '/login', navItem: '个人中心'},
+          {name: '/contact', navItem: '联系我们'},
+          {name: '/ai', navItem: 'AI'}
         ],
         keywords: '',
         circleUrl: 'https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png'
