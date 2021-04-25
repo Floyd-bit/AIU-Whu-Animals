@@ -2,7 +2,7 @@
   <body id="paper">
     <el-form :model="loginForm" :rules="rules" class="login-container" label-position="left"
              label-width="0px" v-loading="loading">
-      <h3 class="login_title">系统登录</h3>
+      <h3 class="login_title">WHU Animals登录</h3>
       <el-form-item prop="username">
         <el-input type="text" v-model="loginForm.username"
                   auto-complete="off" placeholder="账号"></el-input>
@@ -16,6 +16,7 @@
       <el-form-item style="width: 100%">
         <el-button type="primary" style="width: 40%;background: #505458;border: none" v-on:click="login">登录</el-button>
         <router-link to="register"><el-button type="primary" style="width: 40%;background: #505458;border: none">注册</el-button></router-link>
+        <router-link to="pintu">小彩蛋</router-link>
       </el-form-item>
     </el-form>
   </body>

@@ -47,6 +47,16 @@ export default new Router({
           path: '/library',
           name: 'Library',
           component: () => import('../components/library/LibraryIndex')
+        },
+        {
+          path: '/contact',
+          name: 'Contact',
+          component: () => import('../components/contact')
+        },
+        {
+          path: '/ai',
+          name: 'AI',
+          component: () => import('../components/ai')
         }
       ]
     },
@@ -59,6 +69,11 @@ export default new Router({
       path: '/register',
       name: 'Register',
       component: () => import('../components/Register')
+    },
+    {
+      path: '/pintu',
+      name: 'Pintu',
+      component: () => import('../components/pintu')
     },
     {
       path: '/admin',
@@ -129,6 +144,16 @@ export const createRouter = routes => new Router({
           path: '/library',
           name: 'Library',
           component: () => import('../components/library/LibraryIndex')
+        },
+        {
+          path: '/contact',
+          name: 'Contact',
+          component: () => import('../components/contact')
+        },
+        {
+          path: '/ai',
+          name: 'AI',
+          component: () => import('../components/ai')
         }
       ]
     },
@@ -141,6 +166,11 @@ export const createRouter = routes => new Router({
       path: '/register',
       name: 'Register',
       component: () => import('../components/Register')
+    },
+    {
+      path: '/pintu',
+      name: 'Pintu',
+      component: () => import('../components/pintu')
     },
     {
       path: '/admin',
