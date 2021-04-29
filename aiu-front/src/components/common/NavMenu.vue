@@ -16,9 +16,10 @@
         placeholder="快速搜索..."
         prefix-icon="el-icon-search"
         size="medium"
-        style="width: 300px;position:absolute;margin-top: 12px;right: 15%"
+        style="width: 300px;position:absolute;margin-top: 12px;right: 25%"
         v-model="keywords">
       </el-input>
+      <el-avatar :size="size" :src="circleUrl" style="margin-left: 800px;margin-top: 15px"></el-avatar>
     </el-menu>
   </div>
 </template>
@@ -37,6 +38,7 @@
           {name: '/ai', navItem: 'AI'}
         ],
         keywords: '',
+        size: 'large',
         circleUrl: 'https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png'
       }
     },

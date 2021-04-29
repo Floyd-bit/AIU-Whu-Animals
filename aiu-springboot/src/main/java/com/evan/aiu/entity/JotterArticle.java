@@ -18,7 +18,6 @@ public class JotterArticle {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    @NotEmpty(message = "id 不能为空")
     private int id;
 
     /**

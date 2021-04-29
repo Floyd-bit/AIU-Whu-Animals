@@ -22,7 +22,9 @@ public class ApplyAi {
             URL urls = null;
             InputStream input = null;
             try{
-                String newUrl = "\""+path+"\"";
+                //String newUrl = "\""+path+"\"";
+                String newUrl = path.substring(1,path.length()-1);
+                System.out.println(newUrl);
                 urls = new URL(newUrl);
                 HttpURLConnection httpUrl = (HttpURLConnection) urls.openConnection();
                 httpUrl.connect();
@@ -53,7 +55,7 @@ public class ApplyAi {
             String param = "image=" + imgParam;
 
             // 注意这里仅为了简化编码每一次请求都去获取access_token，线上环境access_token有过期时间， 客户端可自行缓存，过期后重新获取。
-            String accessToken = "24.26ab0490776792aa3eab2d94ca06a0ff.2592000.1621226875.282335-24006196";  //第二处改的值为小编要大家复制到记事本的那个token值
+            String accessToken = "24.40787b47d0d15493ccfc46cfb2f73058.2592000.1622191115.282335-24006196";  //第二处改的值为小编要大家复制到记事本的那个token值
 
             String result = HttpUtil.post(url, accessToken, param);
             System.out.println(result);

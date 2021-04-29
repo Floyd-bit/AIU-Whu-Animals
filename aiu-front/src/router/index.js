@@ -10,8 +10,8 @@ export default new Router({
     {
       path: '/',
       name: 'Default',
-      redirect: '/login',
-      component: Login => import('../components/Login')
+      redirect: '/welcome',
+      component: Welcome => import('../components/welcome')
     },
     {
       // home页面并不需要被访问，只是作为其它组件的父组件
@@ -59,6 +59,11 @@ export default new Router({
           component: () => import('../components/ai')
         }
       ]
+    },
+    {
+      path: '/welcome',
+      name: 'Welcome',
+      component: () => import('../components/welcome')
     },
     {
       path: '/login',
@@ -107,8 +112,8 @@ export const createRouter = routes => new Router({
     {
       path: '/',
       name: 'Default',
-      redirect: '/login',
-      component: Login => import('../components/Login')
+      redirect: '/welcome',
+      component: Welcome => import('../components/welcome')
     },
     {
       // home页面并不需要被访问，只是作为其它组件的父组件
@@ -161,6 +166,11 @@ export const createRouter = routes => new Router({
       path: '/login',
       name: 'Login',
       component: () => import('../components/Login')
+    },
+    {
+      path: '/welcome',
+      name: 'Welcome',
+      component: () => import('../components/welcome')
     },
     {
       path: '/register',

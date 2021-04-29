@@ -28,12 +28,13 @@
         show-word-limit
       >
       </el-input>
-      <el-button type="primary">提交</el-button>
+      <el-button type="primary" @click="submit">提交</el-button>
     </el-card>
   </div>
 </template>
 
 <script>
+/* eslint-disable */
   export default {
     name: 'ArticleDetails',
     data () {
@@ -54,6 +55,13 @@
             _this.article = resp.data.result
           }
         })
+      },
+      submit(){
+        this.$notify({
+          title: '成功',
+          message: '评论发表成功',
+          type: 'success'
+        });
       }
     }
   }

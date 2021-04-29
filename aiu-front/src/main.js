@@ -10,6 +10,10 @@ import Qs from 'qs'
 
 import {
   Pagination,
+  Avatar,
+  Backtop,
+  Collapse,
+  CollapseItem,
   Dialog,
   Menu,
   Submenu,
@@ -41,6 +45,7 @@ import {
   Col,
   Upload,
   Progress,
+  PageHeader,
   Spinner,
   Badge,
   Card,
@@ -67,6 +72,11 @@ import {
 import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.use(Qs)
+Vue.use(Avatar)
+Vue.use(Backtop)
+Vue.use(Collapse)
+Vue.use(CollapseItem)
+Vue.use(PageHeader)
 Vue.use(VueResource)
 Vue.use(Pagination)
 Vue.use(Dialog)
@@ -130,7 +140,7 @@ Vue.prototype.$notify = Notification
 Vue.prototype.$message = Message
 
 var axios = require('axios')
-axios.defaults.baseURL = 'http://47.119.125.69:8443/api'
+axios.defaults.baseURL = 'http://localhost:8443/api'
 // 使请求带上凭证信息
 axios.defaults.withCredentials = true
 

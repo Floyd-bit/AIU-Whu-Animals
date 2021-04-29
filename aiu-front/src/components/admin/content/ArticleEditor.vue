@@ -49,7 +49,8 @@
 </template>
 
 <script>
-  import ImgUpload from './ImgUpload'
+/* eslint-disable */
+import ImgUpload from './ImgUpload'
 
   export default {
     name: 'Editor',
@@ -75,7 +76,8 @@
         }).then(() => {
             this.$axios
               .post('/admin/content/article', {
-                id: this.article.id,
+                //id: this.article.id,
+                id: 1,
                 articleTitle: this.article.articleTitle,
                 articleContentMd: value,
                 articleContentHtml: render,
