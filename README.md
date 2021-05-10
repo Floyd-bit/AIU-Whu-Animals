@@ -35,7 +35,7 @@
 - 新增 用例图、甘特图、类图、时序图、协作图
 - 新增 需求文档
 - 新增 设计文档
-
+- 新增 测试文档
 
 #### 需求分析（需求文档见项目文档）
 [需求文档地址](https://shimo.im/docs/3odvQ53htLI2ESKa/ 《需求文档》，可复制链接后用石墨文档 App 或小程序打开)
@@ -62,6 +62,7 @@
 ![三层架构](https://images.gitee.com/uploads/images/2021/0417/151220_343bc655_7797088.png "简单三层.png")
 
 #### 详细设计（设计文档见项目文档）
+[需求文档地址](https://shimo.im/docs/ZzkLVn1447CyP03Q/ 《详细设计文档》，可复制链接后用石墨文档 App 或小程序打开)
 
 1. 软件系统架构图
 
@@ -106,3 +107,6 @@
 ![輸入圖片說明](https://images.gitee.com/uploads/images/2021/0417/162447_73e7fba5_7797088.png "屏幕截图.png")
 - admin_role_permission表
 ![輸入圖片說明](https://images.gitee.com/uploads/images/2021/0417/162501_082eabef_7797088.png "屏幕截图.png")
+
+#### 测试（测试文档见项目文档）
+[测试文档地址](https://shimo.im/docs/9030MW0j9lIznDqw/ 《测试文档》，可复制链接后用石墨文档 App 或小程序打开)
