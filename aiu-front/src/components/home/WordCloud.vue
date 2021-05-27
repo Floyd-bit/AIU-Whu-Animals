@@ -70,7 +70,7 @@ export default {
           "value": 19
         },
         {
-          "name": "框架",
+          "name": "猫狗",
           "value": 23
         },
         {

@@ -16,22 +16,22 @@
     </el-table-column>
     <el-table-column
       prop="province"
-      label="省份"
+      label="学部"
       width="120">
     </el-table-column>
     <el-table-column
       prop="city"
-      label="市区"
+      label="品种"
       width="320">
     </el-table-column>
     <el-table-column
       prop="address"
-      label="地址"
+      label="出现地址"
       width="600">
     </el-table-column>
     <el-table-column
       prop="zip"
-      label="邮编"
+      label="编号"
       width="120">
     </el-table-column>
   </el-table>
@@ -43,53 +43,53 @@ export default {
   data () {
     return {
       tableData: [{
-        date: '2016-05-03',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
+        date: '2021-05-03',
+        name: '杰哥',
+        province: '信息学部',
+        city: '猫',
+        address: '武汉大学信息学部二食堂',
         zip: 200333
       }, {
-        date: '2016-05-02',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
+        date: '2021-05-04',
+        name: '大黄',
+        province: '文理学部',
+        city: '狗',
+        address: '武汉大学文理学部桂圆食堂',
         zip: 200333
       }, {
-        date: '2016-05-04',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
+        date: '2021-05-04',
+        name: '珞珞',
+        province: '珞珈山',
+        city: '狐狸',
+        address: '珞珈山梅园食堂',
         zip: 200333
       }, {
-        date: '2016-05-01',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
+        date: '2021-05-01',
+        name: '旺财',
+        province: '文理学部',
+        city: '乌鸦',
+        address: '武汉大学文理学部3教',
         zip: 200333
       }, {
-        date: '2016-05-08',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
+        date: '2021-05-08',
+        name: '斌斌',
+        province: '信息学部',
+        city: '猫',
+        address: '武汉大学信息学部青楼',
         zip: 200333
       }, {
-        date: '2016-05-06',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
+        date: '2021-05-06',
+        name: '阿伟',
+        province: '信息学部',
+        city: '猫',
+        address: '武汉大学信息学部1食堂',
         zip: 200333
       }, {
-        date: '2016-05-07',
-        name: '王小虎',
-        province: '上海',
-        city: '普陀区',
-        address: '上海市普陀区金沙江路 1518 弄',
+        date: '2021-05-07',
+        name: '杰哥2号',
+        province: '信息学部',
+        city: '猫',
+        address: '武汉大学信息学部C3宿舍',
         zip: 200333
       }]
     }

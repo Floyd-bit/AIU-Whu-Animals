@@ -41,7 +41,7 @@
         <el-card style="margin-bottom: 20px">
           <template #header>
             <div class="card-header">
-              <span>本月词云</span>
+              <span>本周词云</span>
             </div>
           </template>
           <cloud></cloud>

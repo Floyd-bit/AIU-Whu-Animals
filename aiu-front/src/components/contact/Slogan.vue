@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-card class="box-card">
-      <div style="font-size: 45px;color: azure;white-space: nowrap">Talk is nothing, show you my code.</div>
+      <div style="font-size: 45px;color: azure;white-space: nowrap">whu_animal</div>
       <a href="https://github.com/Antabot/White-Jotter" target="_blank">
         <img src="../../assets/img/icon/icon6.png" alt="" class="git-link">
       </a>
